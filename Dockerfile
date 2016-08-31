@@ -9,7 +9,7 @@ ENV APACHE_LOG_DIR /var/log/apache2
 
 EXPOSE 80
 
-ADD http://icecoder.net/download-zip?version=3.0beta /var/www/icecoder.zip
+ADD http://icecoder.net/download-zip?version=5.7 /var/www/icecoder.zip
 
 RUN cd /var/www && unzip -o  icecoder.zip
 RUN cd /var/www && mv ICEco* icecoder
